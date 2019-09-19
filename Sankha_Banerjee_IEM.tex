@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (19/9/2019)
+%
+% Original author:
+% Sankha Banerjee 
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Sankha}{Banerjee}{ \urlstyle{same}\href{https://www.linkedin.com/in/sankha-banerjee-64b99617a/}{Linkedin: sankha-banerjee}\\
+\href{mailto:sankhabanerjee62@gmail.com}{sankhabanerjee62@gmail.com} |+91- 6289325331 / 9163703517 | \href{https://github.com/i-m-sankha16}{github: sankha}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Institute Of Engineering \& Management}
+\descript{BTech in Electronics \& Communication Engineering}
+\location{2017-2021 | Kolkata, India}
+\location{ Cum. GPA: 8.35 / 10.0 \\
+Major GPA: 8.85 / 10.0}
+\sectionsep
+\subsection{Aditya Academy Secondary}
+\location{Grad. May 2017|  Kolkata, India}
+\location{ Overall Percentage: 80}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/i-m-sankha16}{\bf sankha} \\
+LinkedIn://  \href{https://www.linkedin.com/in/sankha-banerjee-64b99617a/}{\bf sankha-banerjee} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Python \\
+Python For Data Science \\
+Artificial Intelligence \\
+IOT \\
+Machine Learning\\
+Deep Learning\\
+Image Processing\\
+Arduino\\
+MatLab\\
+Competitive Programming \\
+Analog Electronic Circuits\\
+Autonomous Robotics\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{}   C++ \textbullet{} Python \\
+Matlab\\
+
+
+
+\location{Familiar:}
+\textbullet{} Android 
+\sectionsep
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Industrial Trainings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Industrial Trainings}
+\runsubsection{Alien Brains }
+\descript{| MACHINE LEARNING}
+\descript{| Trainee }
+\location{Sept 2019 - Present | Kolkata, India}
+\sectionsep
+
+\runsubsection{MY Wbut}
+\descript{| Android Application Developement }
+\location{December 2018 – February 2019 | Kolkata, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item More than 15+ appliactions designed and made 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{My Wbut}
+\descript{| Robotics with Embedded Systems }
+\location{May 2018 – July 2018 | Kolkata, India}
+\begin{tightemize}
+\item Worked on various projects in building many Autonomous Robots
+\end{tightemize}
+\sectionsep
+
+\runsubsection{My Wbut}
+\descript{| Basic Robotics With Analog \& Digital Electronics }
+\location{Dec 2017 – Feb 2018 | Kolkata, India}
+\begin{tightemize}
+\item Created one first wire controlled Robot Car 
+\item Created many complex analog and digital circuits
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MOOCs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{MOOCs}
+\runsubsection{Python For Data Science \& AI}
+\descript{| IBM}
+\descript{| Coursera}
+\sectionsep
+
+\runsubsection{How Google Does Machine Learning}
+\descript{| Google Cloud}
+\descript{| Coursera}
+\sectionsep
+
+\runsubsection{What is Data Science?}
+\descript{| IBM}
+\descript{| Coursera}
+
+\runsubsection{Joy Of Computing Using Python}
+\descript{| NPTEL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\begin{tabular}{rll}
+2017	     & Burglar Alarm using Arduino \\
+2018	     & Remote Monitoring Of Agricultural Lands using 
+Wireless Embedded Systems MAKER FAIRE PROJECT'18\\
+2018         & Designing Of an Android Application which can Monitor                the Agricultural Land\\
+2018         & Accident Alert system using GPS, GSM \& Accelerometer \\
+2019	     & Motion Detection using OpenCV\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Papers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Papers} 
+\begin{tabular}{r11}
+  1   & Remote Monitoring Of Agricultural Lands Using Wireless Embedded Systems \\
+\end{tabular}
+\sectionsep
+
+\section{Extra Curricular Activities}
+\runsubsection{Innovacion}
+\descript{| Annual Technoloy Fest Of IEM}
+\begin{tightemize}
+\item Participated in RoboRace
+\end{tightemize}
+
+
+\runsubsection{Kolkata Mini Maker Faire,2018 }
+\begin{tightemize}
+\item Our Project applauded by the big minds of the industry like ACCENTURE , 10000 START UPs etc 
+\end{tightemize}
+\sectionsep
+
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
